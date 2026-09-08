@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Сайгак: сохранить степь — полевой проект, Республика Калмыкия</title>
+<meta name="description" content="Некоммерческий просветительский проект о сохранении сайгака и калмыцкой степи. Заповедник «Чёрные земли», вопросы и ответы, как помочь.">
+<!-- Раскомментируй, пока проект учебный и не должен индексироваться:
+<meta name="robots" content="noindex"> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Unbounded:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- ══════════════════════════════════════════════════════════════
+  СЧЁТЧИКИ ВЕБ-АНАЛИТИКИ
+  Сюда вставляются ровно три счётчика (по мере готовности):
+  1) Яндекс.Метрика  — код из кабинета Метрики. После вставки
+     впишите номер счётчика в константу YM_ID в скрипте внизу.
+  2) Рамблер/Топ100  — код счётчика из кабинета Топ100.
+  3) Top.Mail.ru     — код счётчика из кабинета Топ.ру.
+  Другие системы в проект не добавляются.
+═══════════════════════════════════════════════════════════════ -->
+<!-- 1) ЯНДЕКС.МЕТРИКА: вставить сюда код вида:
+<script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+ym(XXXXXXXX,"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true});
+</script> -->
+<!-- 2) РАМБЛЕР/ТОП100: вставить сюда код счётчика из кабинета Топ100 -->
+<!-- 3) TOP.MAIL.RU: вставить сюда код счётчика из кабинета Топ.ру -->
+</head>
+<body>
+
+<!-- скрытые символы: силуэт сайгака -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="saiga" viewBox="0 0 140 90">
+    <path d="M10 66 C8 62 10 58 14 56 C18 48 26 46 32 46 C46 36 66 34 82 34 C90 34 94 30 97 24 C99 19 102 15 107 14 C112 12 118 13 121 17 C125 21 126 27 123 31 C121 35 116 36 112 35 C108 34 105 37 103 42 C101 47 98 50 94 52 L96 58 L116 70 L113 73 L92 62 C88 66 82 68 76 67 L84 84 L79 84 L70 66 C56 70 44 68 36 62 L18 80 L14 78 L30 58 C22 56 14 60 12 64 Z"/>
+    <path d="M38 62 L28 82 L24 82 L34 60 Z"/>
+    <path d="M90 56 L102 78 L98 80 L86 60 Z"/>
+    <path d="M107 14 C103 9 104 4 100 1" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+    <path d="M112 14 C109 9 110 4 106 1" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+  </symbol>
+</svg>
+
+<div class="noise" aria-hidden="true"></div>
+
+<!-- ══ статусная строка ══ -->
+<div class="statusbar mono">
+  <div class="wrap sbin">
+    <span class="dot" aria-hidden="true"></span>
+    <span>полевой проект · республика калмыкия</span>
+    <span class="hide-s">46°14′ N · 44°12′ E</span>
+    <span class="sb-r">популяция: <b>стабильный рост</b></span>
+  </div>
+</div>
+
+<!-- ══ шапка ══ -->
+<header class="site-head">
+  <div class="wrap headin">
+    <a class="logo" href="index.html">
+      <svg class="logo-saiga" viewBox="0 0 140 90" aria-hidden="true"><use href="#saiga"/></svg>
+      <span class="logo-t">САЙГАК<small>сохранить степь</small></span>
+    </a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="index.html" class="active" aria-current="page">Главная</a>
+      <a href="saiga.html">О сайгаке</a>
+      <a href="decline.html">Почему исчезает</a>
+      <a href="rescue.html">Как спасают</a>
+      <a href="faq.html">Вопросы</a>
+      <a href="help.html" class="nav-cta" data-track="nav_help">Помочь</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ══ открытие: степь на закате ══ -->
+<section class="opening">
+  <div class="wrap open-grid">
+    <div class="open-text">
+      <p class="kicker mono rv">Saiga tatarica · красная книга рф</p>
+      <h1 class="lm">
+        <span class="ln"><i>Сайгак:</i></span>
+        <span class="ln"><i>сохранить</i></span>
+        <span class="ln"><i class="acc">степь</i></span>
+      </h1>
+      <p class="lede rv d3">Единственная антилопа Европы живёт в калмыцкой степи. Двадцать лет назад она почти исчезла — и вернулась. Этот некоммерческий проект рассказывает, как это произошло и почему степи всё ещё нужны глаза и руки.</p>
+      <div class="open-cta rv d4">
+        <a class="btn red" href="saiga.html" data-track="cta_about_saiga">Кто такой сайгак <span class="a">→</span></a>
+        <a class="btn" href="help.html" data-track="cta_help_open">Как помочь <span class="a">→</span></a>
+      </div>
+    </div>
+    <aside class="counter-card rv d2" aria-label="Численность популяции">
+      <p class="cc-top mono">калмыцкая популяция · особей</p>
+      <p class="cc-num"><span id="popCounter">0</span></p>
+      <p class="cc-note mono">оценка по данным мониторинга последних лет · <span class="cc-up">×23</span> от критического минимума 2002 года</p>
+      <p class="cc-tag mono">статус: восстанавливается ↗</p>
+    </aside>
+  </div>
+
+  <!-- горизонт степи -->
+  <div class="horizon" aria-hidden="true">
+    <svg viewBox="0 0 1440 250" preserveAspectRatio="xMidYMax slice">
+      <defs><clipPath id="above"><rect x="0" y="0" width="1440" height="212"/></clipPath></defs>
+      <circle cx="1090" cy="212" r="105" fill="var(--red)" opacity=".9" clip-path="url(#above)"/>
+      <line x1="0" y1="212" x2="1440" y2="212" stroke="var(--ink)" stroke-width="1.5"/>
+      <g stroke="var(--ink)" stroke-width="2" stroke-linecap="round" opacity=".8">
+        <path d="M120 212 l3 -11 M128 212 l2 -7 M300 212 l3 -9 M307 212 l2 -6 M620 212 l3 -10 M1240 212 l3 -9 M1247 212 l2 -6 M1390 212 l3 -8"/>
+      </g>
+      <g class="herd" fill="var(--ink)">
+        <use href="#saiga" width="126" height="81" transform="translate(180 132)"/>
+        <use href="#saiga" width="92" height="59" transform="translate(360 154)"/>
+        <use href="#saiga" width="150" height="96" transform="translate(520 117)"/>
+        <use href="#saiga" width="70" height="45" transform="translate(740 168)" opacity=".55"/>
+        <use href="#saiga" width="56" height="36" transform="translate(860 177)" opacity=".4"/>
+      </g>
+    </svg>
+  </div>
+  <div class="wrap"><p class="ticks mono"><span>заповедник «чёрные земли»</span><span class="hide-s">основан в 1990</span><span class="hide-s">степь · полупустыня</span><span>вып. 01 / 2026</span></p></div>
+</section>
+
+<!-- ══ бегущая строка ══ -->
+<div class="marq" aria-hidden="true">
+  <div class="marq-track">
+    <span>Saiga tatarica <em>✦</em> красная книга рф <em>✦</em> скорость до 60 км/ч <em>✦</em> заповедник «чёрные земли» · с 1990 <em>✦</em> детёныш встаёт на ноги через 10 минут <em>✦</em> миграции до 200 км <em>✦</em> нос-фильтр: зима и пыль <em>✦</em> </span>
+    <span>Saiga tatarica <em>✦</em> красная книга рф <em>✦</em> скорость до 60 км/ч <em>✦</em> заповедник «чёрные земли» · с 1990 <em>✦</em> детёныш встаёт на ноги через 10 минут <em>✦</em> миграции до 200 км <em>✦</em> нос-фильтр: зима и пыль <em>✦</em> </span>
+  </div>
+</div>
+
+<!-- ══ 01 / вид ══ -->
+<section class="sec" id="who">
+  <div class="wrap">
+    <div class="shead">
+      <span class="sindex mono">01 / вид</span>
+      <h2 class="rv">Кто такой сайгак</h2>
+      <p class="snote">Реликт ледникового периода, ровесник мамонта. Пережил оледенение, но едва не исчез в начале XXI века.</p>
+    </div>
+    <div class="who-grid">
+      <article class="who-big rv">
+        <div class="kb"><img src="https://picsum.photos/seed/saiga-steppe-portrait/900/640" alt="Сайгак в калмыцкой степи"></div>
+        <div class="who-cap">
+          <h3>Нос, которого больше ни у кого нет</h3>
+          <p>Вздутый хоботок-«фильтр» согревает ледяной воздух зимой и задерживает пыль летом. По нему сайгака не спутать ни с одним копытным планеты.</p>
+        </div>
+      </article>
+      <article class="who-card rv d1">
+        <p class="wc-num">60 <small>км/ч</small></p>
+        <h3>Быстрее волка</h3>
+        <p>Главная защита сайгака — бег. На ровной степи его не догоняет ни один хищник, поэтому браконьерство на джипах — самая страшная угроза.</p>
+      </article>
+      <article class="who-card rv d2">
+        <p class="wc-num">200 <small>км</small></p>
+        <h3>Память поколений</h3>
+        <p>Маршруты сезонных миграций передаются от самок к детёнышам. Потеря одного маршрута — потеря части культурной памяти стада.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 02 / что случилось ══ -->
+<section class="sec dark" id="what">
+  <div class="wrap dark-grid">
+    <div class="dark-text">
+      <span class="sindex mono">02 / угроза</span>
+      <h2 class="rv">Что случилось в 1990-е</h2>
+      <p class="rv d1">Распад системы охраны, спрос на рога и эпизоотии обрушили численность с сотен тысяч до нескольких сотен особей. Калмыцкая группировка к началу 2000-х была на грани исчезновения.</p>
+      <p class="rv d2">Ниже — упрощённая динамика численности в калмыцкой степи. Полная история с причинами — на отдельной странице проекта.</p>
+      <a class="btn light rv d3" href="decline.html" data-track="cta_decline_open">Почему сайгак исчезает <span class="a">→</span></a>
+      <p class="src mono">график упрощён · значения округлены по открытым источникам</p>
+    </div>
+    <div class="chart-wrap rv">
+      <svg class="chart" viewBox="0 0 560 320" role="img" aria-label="Динамика численности сайгака: 1990 — около 4500 особей, 2002 — около 300, 2024 — около 7000">
+        <g class="grid" stroke="rgba(242,233,212,.14)" stroke-dasharray="3 6">
+          <line x1="40" y1="40"  x2="540" y2="40"/>
+          <line x1="40" y1="105" x2="540" y2="105"/>
+          <line x1="40" y1="170" x2="540" y2="170"/>
+          <line x1="40" y1="235" x2="540" y2="235"/>
+        </g>
+        <g class="ylab mono" fill="rgba(242,233,212,.55)" font-size="10">
+          <text x="8" y="44">7к</text><text x="8" y="109">5к</text><text x="8" y="174">3к</text><text x="8" y="239">1к</text><text x="12" y="302">0</text>
+        </g>
+        <path class="area" d="M40 133 L113 218 L186 274 L215 289 L260 278 L303 267 L360 222 L406 181 L470 110 L540 40 L540 300 L40 300 Z"/>
+        <polyline class="poly" fill="none" points="40,133 113,218 186,274 215,289 260,278 303,267 360,222 406,181 470,110 540,40"/>
+        <g class="pt pt-red">
+          <circle cx="215" cy="289" r="5"/>
+          <text x="188" y="272">≈ 300 · 2002</text>
+        </g>
+        <g class="pt pt-now">
+          <circle cx="540" cy="40" r="5"/>
+          <text x="470" y="28">≈ 7 000 · 2024</text>
+        </g>
+        <line x1="40" y1="300" x2="540" y2="300" stroke="rgba(242,233,212,.4)" stroke-width="1.5"/>
+        <g class="xlab mono" fill="rgba(242,233,212,.55)" font-size="10">
+          <text x="32" y="316">1990</text><text x="200" y="316">2002</text><text x="360" y="316">2015</text><text x="516" y="316">2024</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 03 / хроника спасения ══ -->
+<section class="sec" id="timeline">
+  <div class="wrap tl-grid">
+    <div class="tl-left">
+      <div class="sticky">
+        <span class="sindex mono">03 / восстановление</span>
+        <h2 class="rv">Хроника спасения</h2>
+        <p class="rv d1">Пять дат, которые разворачивают график вверх. Подробно о каждой программе — на странице «Как спасают».</p>
+        <a class="btn rv d2" href="rescue.html" data-track="cta_rescue_open">Как спасают сайгака <span class="a">→</span></a>
+        <div class="redbook rv d3" role="note">
+          <p class="rb-t">КРАСНАЯ КНИГА РФ</p>
+          <p class="rb-s">Saiga tatarica</p>
+          <p class="rb-n">в списке с 2001 года · охраняется на территории заповедника «Чёрные земли»</p>
+        </div>
+      </div>
+    </div>
+    <ol class="tl-right">
+      <li class="tl-item rv"><span class="tl-y">1990</span><p>Создан заповедник «Чёрные земли» — первая территория в России, учреждённая специально ради сайгака.</p></li>
+      <li class="tl-item rv"><span class="tl-y">2002</span><p>Критический минимум: в калмыцкой степи учтены считанные сотни животных. Браконьерство и эпизоотии почти обнулили популяцию.</p></li>
+      <li class="tl-item rv"><span class="tl-y">2008</span><p>Запущены подкормочные площадки: суровые зимы сайгаки теперь переживают с запасом сена и воды.</p></li>
+      <li class="tl-item rv"><span class="tl-y">2015</span><p>После массовой гибели сайгаков в соседних популяциях усилен ветеринарный мониторинг и антибраконьерские рейды.</p></li>
+      <li class="tl-item rv"><span class="tl-y">2021</span><p>Численность в республике впервые за двадцать лет превысила пять тысяч особей.</p></li>
+      <li class="tl-item rv"><span class="tl-y">2024</span><p>Популяция оценивается примерно в семь тысяч. Сайгак снова стал обычным обитателем степи — но не перестал быть уязвимым.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ══ 04 / вопросы ══ -->
+<section class="sec paper2" id="faq-teaser">
+  <div class="wrap">
+    <div class="shead">
+      <span class="sindex mono">04 / вопросы</span>
+      <h2 class="rv">Спрашивают чаще всего</h2>
+      <p class="snote">Три главных вопроса о сайгаке. Остальные семь — на отдельной странице.</p>
+    </div>
+    <div class="faq rv">
+      <div class="faq-item" data-q="nose">
+        <button class="faq-q" type="button">Зачем сайгаку такой странный нос?<span class="pm">+</span></button>
+        <div class="faq-a"><div><p>Вздутый хоботок — природный кондиционер. Зимой он согревает ледяной воздух, прежде чем тот попадёт в лёгкие, а летом задерживает степную пыль. Плюс нос усиливает звуки: в сезон гона самцов слышно за сотни метров.</p></div></div>
+      </div>
+      <div class="faq-item" data-q="calves">
+        <button class="faq-q" type="button">Почему нельзя подходить к сайгачатам?<span class="pm">+</span></button>
+        <div class="faq-a"><div><p>Сайгачата первые недели лежат в траве неподвижно — так их прячет мать. Запах человека на детёныше может заставить самку отказаться от него. Увидели сайгачонка — отходите не приближаясь и сообщите инспекторам.</p></div></div>
+      </div>
+      <div class="faq-item" data-q="see">
+        <button class="faq-q" type="button">Можно ли увидеть сайгака в поездке по Калмыкии?<span class="pm">+</span></button>
+        <div class="faq-a"><div><p>Да, но это не зоопарк. Лучший способ — согласованный визит в окрестности заповедника «Чёрные земли» с местным гидом: на рассвете стада выходят к подкормочным площадкам. Самостоятельно съезжать со степных дорог не стоит — можно спугнуть животных или застрять.</p></div></div>
+      </div>
+    </div>
+    <div class="open-cta rv d1" style="margin-top:34px">
+      <a class="btn" href="faq.html" data-track="cta_faq_all">Все вопросы и ответы <span class="a">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA ══ -->
+<section class="cta-band">
+  <div class="wrap cta-in">
+    <h2 class="rv">Степи нужны глаза и руки</h2>
+    <div class="cta-actions rv d1">
+      <a class="cta-a" href="help.html#volunteer" data-track="cta_volunteer">Стать волонтёром <span class="a">→</span></a>
+      <a class="cta-a" href="help.html#sighting" data-track="cta_sighting">Сообщить о встрече <span class="a">→</span></a>
+      <a class="cta-a" href="help.html#share" data-track="cta_share">Рассказать о проекте <span class="a">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ подвал ══ -->
+<footer class="site-foot">
+  <div class="wrap">
+    <p class="foot-word" aria-hidden="true">САЙГАК</p>
+    <div class="foot-grid">
+      <div>
+        <p class="f-t mono">разделы</p>
+        <a href="index.html">Главная</a>
+        <a href="saiga.html">О сайгаке</a>
+        <a href="decline.html">Почему исчезает</a>
+        <a href="rescue.html">Как спасают</a>
+        <a href="faq.html">Вопросы</a>
+        <a href="help.html">Помочь</a>
+      </div>
+      <div>
+        <p class="f-t mono">о проекте</p>
+        <p class="f-p">Некоммерческий просветительский проект о сохранении сайгака и калмыцкой степи. Не продаём ничего: только рассказываем и собираем помощь.</p>
+      </div>
+      <div>
+        <p class="f-t mono">данные</p>
+        <p class="f-p mono-sm">46°14′ N · 44°12′ E<br>заповедник «чёрные земли»<br>вып. 01 / 2026</p>
+      </div>
+    </div>
+    <p class="foot-meta mono">учебный проект по дисциплине «веб-аналитика» · 2026 · сделано без коммерческих целей</p>
+  </div>
+</footer>
+
+<script>
+/* ── слой веб-аналитики проекта ─────────────────────────────────
+   Системы: Яндекс.Метрика · Рамблер/Топ100 · Top.Mail.ru.
+   Коды счётчиков вставляются в <head>; здесь — единая точка
+   отправки событий. Ничего другого не подключать.            */
+const YM_ID = null; // ← сюда вписать номер счётчика Метрики (только цифры)
+window.analyticsLog = [];
+function track(action, params){
+  const p = params || {};
+  window.analyticsLog.push({ ts: new Date().toISOString(), action, params: p });
+  console.info('[analytics]', action, p);
+  try { // Яндекс.Метрика: цели типа «JavaScript-событие» с тем же идентификатором
+    if (window.ym && YM_ID) ym(YM_ID, 'reachGoal', action, p);
+  } catch (e) {}
+  try { // Top.Mail.ru
+    if (window._tmr) _tmr.push(Object.assign({ type: 'reachGoal', goal: action }, p));
+  } catch (e) {}
+  // Рамблер/Топ100: отправку событий добавим по их документации,
+  // когда будет вставлен код счётчика.
+}
+track('page_view', { page: '/' });
+document.addEventListener('click', function (ev) {
+  const t = ev.target.closest('[data-track]');
+  if (t) track(t.dataset.track);
+});
+
+const RM = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* появление блоков при скролле */
+const io = new IntersectionObserver(function (entries) {
+  entries.forEach(function (en) {
+    if (!en.isIntersecting) return;
+    en.target.classList.add('in');
+    if (en.target.classList.contains('chart-wrap')) drawChart();
+    io.unobserve(en.target);
+  });
+}, { threshold: .18 });
+document.querySelectorAll('.rv,.lm,.chart-wrap').forEach(el => io.observe(el));
+
+/* счётчик популяции */
+(function () {
+  const el = document.getElementById('popCounter'), target = 7000;
+  if (RM) { el.textContent = '7 000'; return; }
+  let t0 = null;
+  function step(ts) {
+    if (!t0) t0 = ts;
+    const p = Math.min((ts - t0) / 2200, 1);
+    const eased = 1 - Math.pow(1 - p, 3);
+    el.textContent = Math.round(target * eased).toLocaleString('ru-RU');
+    if (p < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+})();
+
+/* график: плавная отрисовка линии по её реальной длине */
+let drawn = false;
+function drawChart() {
+  if (drawn) return; drawn = true;
+  const poly = document.querySelector('.chart .poly');
+  if (!poly) return;
+  const len = poly.getTotalLength ? poly.getTotalLength() : 900;
+  poly.style.strokeDasharray = len;
+  poly.style.strokeDashoffset = RM ? 0 : len;
+  poly.getBoundingClientRect();
+  requestAnimationFrame(() => {
+    poly.style.transition = RM ? 'none' : 'stroke-dashoffset 2.2s cubic-bezier(.4,0,.2,1) .2s';
+    poly.style.strokeDashoffset = 0;
+  });
+}
+
+/* аккордеон вопросов: открыт только один, клик шлёт событие аналитики */
+document.querySelectorAll('.faq-q').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    const item = btn.closest('.faq-item');
+    const wasOpen = item.classList.contains('open');
+    item.parentElement.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!wasOpen) {
+      item.classList.add('open');
+      track('faq_open', { q: item.dataset.q });
+    }
+  });
+});
+</script>
+</body>
+</html>

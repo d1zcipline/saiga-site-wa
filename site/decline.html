@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Почему сайгак исчезает | Сайгак: сохранить степь</title>
+<meta name="description" content="Как сайгак едва не исчез: динамика численности, четыре главные угрозы — браконьерство, эпизоотии, деградация степи, суровые зимы.">
+<!-- Раскомментируй, пока проект учебный:
+<meta name="robots" content="noindex"> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Unbounded:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- ══ СЧЁТЧИКИ: Яндекс.Метрика · Рамблер/Топ100 · Top.Mail.ru (вставить коды) ══ -->
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="saiga" viewBox="0 0 140 90">
+    <path d="M10 66 C8 62 10 58 14 56 C18 48 26 46 32 46 C46 36 66 34 82 34 C90 34 94 30 97 24 C99 19 102 15 107 14 C112 12 118 13 121 17 C125 21 126 27 123 31 C121 35 116 36 112 35 C108 34 105 37 103 42 C101 47 98 50 94 52 L96 58 L116 70 L113 73 L92 62 C88 66 82 68 76 67 L84 84 L79 84 L70 66 C56 70 44 68 36 62 L18 80 L14 78 L30 58 C22 56 14 60 12 64 Z"/>
+    <path d="M38 62 L28 82 L24 82 L34 60 Z"/>
+    <path d="M90 56 L102 78 L98 80 L86 60 Z"/>
+    <path d="M107 14 C103 9 104 4 100 1" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+    <path d="M112 14 C109 9 110 4 106 1" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+  </symbol>
+</svg>
+
+<div class="noise" aria-hidden="true"></div>
+
+<div class="statusbar mono">
+  <div class="wrap sbin">
+    <span class="dot" aria-hidden="true"></span>
+    <span>полевой проект · республика калмыкия</span>
+    <span class="hide-s">46°14′ N · 44°12′ E</span>
+    <span class="sb-r">вып. 03 · расследование</span>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="wrap headin">
+    <a class="logo" href="index.html">
+      <svg class="logo-saiga" viewBox="0 0 140 90" aria-hidden="true"><use href="#saiga"/></svg>
+      <span class="logo-t">САЙГАК<small>сохранить степь</small></span>
+    </a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="index.html">Главная</a>
+      <a href="saiga.html">О сайгаке</a>
+      <a href="decline.html" class="active" aria-current="page">Почему исчезает</a>
+      <a href="rescue.html">Как спасают</a>
+      <a href="faq.html">Вопросы</a>
+      <a href="help.html" class="nav-cta" data-track="nav_help">Помочь</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ══ открытие ══ -->
+<section class="pg-open">
+  <div class="wrap po-grid">
+    <div>
+      <p class="crumbs mono rv"><a href="index.html">главная</a> / почему исчезает</p>
+      <p class="kicker mono rv">расследование · 1990 → 2024</p>
+      <h1 class="lm">
+        <span class="ln"><i>Почему</i></span>
+        <span class="ln"><i>сайгак</i></span>
+        <span class="ln"><i class="acc">исчезает</i></span>
+      </h1>
+      <p class="lede rv d2">За пятнадцать лет численность рухнула почти до нуля — и вид спасли буквально единицы оставшихся животных. Разбираем по цифрам, как это произошло и что до сих пор держит сайгака под угрозой.</p>
+    </div>
+    <aside class="loss rv d1" aria-label="Падение численности">
+      <p class="loss-num">−99%</p>
+      <p class="loss-cap mono">так упала численность сайгака на территории бывшего ареала за 1990–2000-е годы</p>
+    </aside>
+  </div>
+</section>
+
+<!-- ══ большой график ══ -->
+<section class="sec dark" id="chart">
+  <div class="wrap">
+    <div class="shead">
+      <span class="sindex mono">01 / динамика</span>
+      <h2 class="rv">Численность в калмыцкой степи</h2>
+      <p class="snote">Четыре поворотные точки. Нажимайте на эпохи под графиком.</p>
+    </div>
+    <div class="bchart-wrap rv">
+      <svg class="bchart" viewBox="0 0 640 340" role="img" aria-label="График численности сайгака в Калмыкии, 1985–2024 годы">
+        <g class="grid" stroke="rgba(242,233,212,.14)" stroke-dasharray="3 6">
+          <line x1="60" y1="60"  x2="600" y2="60"/>
+          <line x1="60" y1="140" x2="600" y2="140"/>
+          <line x1="60" y1="220" x2="600" y2="220"/>
+        </g>
+        <g class="ylab mono" fill="rgba(242,233,212,.55)" font-size="10">
+          <text x="14" y="64">15к</text><text x="20" y="144">10к</text><text x="24" y="224">5к</text><text x="36" y="304">0</text>
+        </g>
+        <path class="area" d="M60 60 L129 228 L198 265 L268 289 L295 295 L351 290 L406 281 L475 249 L545 220 L600 188 L600 300 L60 300 Z"/>
+        <polyline class="poly" fill="none" points="60,60 129,228 198,265 268,289 295,295 351,290 406,281 475,249 545,220 600,188"/>
+        <g class="mark" data-era="a"><circle cx="198" cy="265" r="9"/><text x="176" y="246">①</text></g>
+        <g class="mark" data-era="b"><circle cx="295" cy="295" r="9"/><text x="276" y="278">②</text></g>
+        <g class="mark" data-era="c"><circle cx="406" cy="281" r="9"/><text x="388" y="263">③</text></g>
+        <g class="mark" data-era="d"><circle cx="600" cy="188" r="9"/><text x="560" y="172">④</text></g>
+        <line x1="60" y1="300" x2="600" y2="300" stroke="rgba(242,233,212,.4)" stroke-width="1.5"/>
+        <g class="xlab mono" fill="rgba(242,233,212,.55)" font-size="10">
+          <text x="50" y="322">1985</text><text x="180" y="322">1995</text><text x="285" y="322">2002</text><text x="460" y="322">2015</text><text x="580" y="322">2024</text>
+        </g>
+      </svg>
+    </div>
+    <div class="era-grid rv d1">
+      <div class="era-tabs" role="tablist" aria-label="Эпохи">
+        <button class="era active" data-era="a" type="button">① 1990-е · обвал</button>
+        <button class="era" data-era="b" type="button">② 2002 · дно</button>
+        <button class="era" data-era="c" type="button">③ 2008 · поддержка</button>
+        <button class="era" data-era="d" type="button">④ 2019 · восстановление</button>
+      </div>
+      <div class="era-panel" aria-live="polite">
+        <div id="era-body">
+          <p class="era-y mono">1990-е годы</p>
+          <h3 id="era-title">Система охраны рухнула</h3>
+          <p id="era-text">Вместе с экономикой исчезли инспекции и научные станции. Рога сайгака оказались дорогим «товаром» для восточной медицины, и на степь вышли браконьеры на джипах. Численность падала каждый год.</p>
+        </div>
+      </div>
+    </div>
+    <p class="src mono">график упрощён · значения округлены по открытым источникам · точки-эпохи подписаны ①–④</p>
+  </div>
+</section>
+
+<!-- ══ четыре угрозы ══ -->
+<section class="sec" id="threats">
+  <div class="wrap">
+    <div class="shead">
+      <span class="sindex mono">02 / угрозы</span>
+      <h2 class="rv">Четыре причины, по которым это может повториться</h2>
+      <p class="snote">Каждая угроза существует и сегодня — просто сейчас её сдерживают.</p>
+    </div>
+
+    <article class="threat rv">
+      <div class="img"><img src="https://picsum.photos/seed/anti-poaching-patrol-jeep/720/520" alt="Патруль против браконьеров в степи"></div>
+      <div class="txt">
+        <p class="t-n">01</p>
+        <h3>Браконьерство</h3>
+        <p>Главный враг взрослого сайгака — не волк, а джип. Преследование по ровной степи лишает антилопу её единственного преимущества: скорости. Цель — рога, которые до сих пор ценятся в традиционной медицине соседних стран.</p>
+        <p class="fact mono">факт: одно преследование на машине губит сразу нескольких животных</p>
+      </div>
+    </article>
+
+    <article class="threat rev rv">
+      <div class="img"><img src="https://picsum.photos/seed/vet-monitoring-steppe/720/520" alt="Ветеринарный мониторинг в степи"></div>
+      <div class="txt">
+        <p class="t-n">02</p>
+        <h3>Эпизоотии</h3>
+        <p>Пастереллёз и родственные инфекции в плотных стадах развиваются за считанные дни. В 2015 году эпизоотия в Казахстане унесла больше ста тысяч сайгаков — больше, чем браконьеры за десятилетие. Защита одна: постоянный мониторинг и быстрая реакция.</p>
+        <p class="fact mono">факт: в 2015-м болезнь выкашивала целые стада за несколько дней</p>
+      </div>
+    </article>
+
+    <article class="threat rv">
+      <div class="img"><img src="https://picsum.photos/seed/plowed-steppe-road/720/520" alt="Распаханная степь и дорога"></div>
+      <div class="txt">
+        <p class="t-n">03</p>
+        <h3>Деградация степи</h3>
+        <p>Распашка, заборы, дороги и нерегулируемый выпас режут степь на лоскуты. Сайгаку нужны открытые пространства и веками протоптанные коридоры миграций. Перекрытый коридор — потерянный навсегда: маршрут «помнят» самки и передают его детёнышам.</p>
+        <p class="fact mono">факт: потеря коридора миграции необратима для стада</p>
+      </div>
+    </article>
+
+    <article class="threat rev rv">
+      <div class="img"><img src="https://picsum.photos/seed/kalmykia-harsh-winter/720/520" alt="Суровая зима в калмыцкой степи"></div>
+      <div class="txt">
+        <p class="t-n">04</p>
+        <h3>Суровые зимы и климат</h3>
+        <p>Джуд — ледяная корка поверх снега — отрезает траву, и стада слабеют прямо на глазах. Засухи бьют по летним пастбищам. Климат меняется быстрее, чем степь успевает адаптироваться, поэтому подкормочные площадки зимой — вопрос выживания.</p>
+        <p class="fact mono">факт: против джуда бессильны даже самые крепкие самцы</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ══ что уже сработало ══ -->
+<section class="worked">
+  <div class="wrap w-grid">
+    <div class="rv">
+      <p class="sindex mono">03 / надежда</p>
+      <h2>Что уже сработало</h2>
+      <p class="w-note">Кривая развернулась вверх не сама. Три решения дали эффект — подробно о них на следующей странице.</p>
+      <a class="btn light rv d2" href="rescue.html" data-track="cta_rescue_open">Как спасают сайгака <span class="a">→</span></a>
+    </div>
+    <ul class="w-list rv d1">
+      <li><b>подкормочные площадки</b><span>сено и вода в жестокие зимы</span></li>
+      <li><b>антибраконьерские рейды</b><span>совместные патрули инспекторов</span></li>
+      <li><b>постоянный мониторинг</b><span>учёты, авиация, фотоловушки</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ══ CTA ══ -->
+<section class="cta-band">
+  <div class="wrap cta-in">
+    <h2 class="rv">Степи нужны глаза и руки</h2>
+    <div class="cta-actions rv d1">
+      <a class="cta-a" href="help.html#volunteer" data-track="cta_volunteer">Стать волонтёром <span class="a">→</span></a>
+      <a class="cta-a" href="help.html#sighting" data-track="cta_sighting">Сообщить о встрече <span class="a">→</span></a>
+      <a class="cta-a" href="help.html#share" data-track="cta_share">Рассказать о проекте <span class="a">→</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p class="foot-word" aria-hidden="true">САЙГАК</p>
+    <div class="foot-grid">
+      <div>
+        <p class="f-t mono">разделы</p>
+        <a href="index.html">Главная</a>
+        <a href="saiga.html">О сайгаке</a>
+        <a href="decline.html">Почему исчезает</a>
+        <a href="rescue.html">Как спасают</a>
+        <a href="faq.html">Вопросы</a>
+        <a href="help.html">Помочь</a>
+      </div>
+      <div>
+        <p class="f-t mono">о проекте</p>
+        <p class="f-p">Некоммерческий просветительский проект о сохранении сайгака и калмыцкой степи. Не продаём ничего: только рассказываем и собираем помощь.</p>
+      </div>
+      <div>
+        <p class="f-t mono">данные</p>
+        <p class="f-p mono-sm">46°14′ N · 44°12′ E<br>заповедник «чёрные земли»<br>вып. 03 / 2026</p>
+      </div>
+    </div>
+    <p class="foot-meta mono">учебный проект по дисциплине «веб-аналитика» · 2026 · сделано без коммерческих целей</p>
+  </div>
+</footer>
+
+<style>
+/* ── страница «Почему исчезает» ───────────────────────── */
+.pg-open{padding:64px 0 70px;border-bottom:1px solid var(--line)}
+.po-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
+.crumbs{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:22px}
+.crumbs a{border-bottom:1px solid var(--red);transition:.2s}
+.crumbs a:hover{color:var(--red)}
+
+/* −99% */
+.loss{background:var(--red);color:var(--cream);border-radius:4px;padding:44px 38px;box-shadow:16px 16px 0 rgba(37,31,22,.08);transform:rotate(1.2deg)}
+.loss-num{font-family:var(--disp);font-weight:900;font-size:clamp(64px,7vw,110px);line-height:1}
+.loss-cap{margin-top:16px;font-size:11.5px;line-height:1.7;letter-spacing:.06em;text-transform:uppercase;opacity:.85}
+
+/* большой график */
+.bchart-wrap{background:rgba(242,233,212,.04);border:1px solid rgba(242,233,212,.14);border-radius:4px;padding:28px}
+.bchart{width:100%;height:auto;display:block}
+.bchart .area{fill:rgba(194,64,29,.16)}
+.bchart .poly{stroke:var(--cream);stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round}
+.bchart .mark circle{fill:var(--dusk);stroke:var(--cream);stroke-width:2;transition:.25s}
+.bchart .mark text{font-family:var(--mono);font-size:12px;fill:rgba(242,233,212,.8)}
+.bchart .mark.active circle{fill:var(--red);stroke:var(--red);r:11}
+.src{font-size:10.5px;letter-spacing:.1em;color:rgba(242,233,212,.42)!important;margin-top:22px}
+
+/* эпохи */
+.era-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:34px;margin-top:30px;align-items:start}
+.era-tabs{display:flex;flex-direction:column;gap:10px}
+.era{font-family:var(--mono);font-size:13px;letter-spacing:.06em;text-transform:uppercase;text-align:left;padding:14px 18px;border:1px solid rgba(242,233,212,.2);background:transparent;color:rgba(242,233,212,.72);border-radius:3px;transition:.25s;cursor:pointer}
+.era:hover{border-color:var(--cream);color:var(--cream)}
+.era.active{background:var(--red);border-color:var(--red);color:var(--cream)}
+.era-panel{background:rgba(242,233,212,.05);border:1px solid rgba(242,233,212,.16);border-left:4px solid var(--red);border-radius:4px;padding:30px 34px}
+.era-y{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#ff9c72;margin-bottom:10px}
+.era-panel h3{font-family:var(--disp);font-weight:700;font-size:clamp(19px,2.4vw,26px);margin-bottom:12px}
+.era-panel p:last-child{color:rgba(242,233,212,.75)}
+#era-body{animation:eraIn .4s ease}
+@keyframes eraIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* угрозы */
+.threat{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding:46px 0;border-bottom:1px dashed var(--line)}
+.threat:last-of-type{border-bottom:0}
+.threat .img{overflow:hidden;border-radius:4px;aspect-ratio:3/2;border:1px solid var(--line)}
+.threat .img img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.threat:hover .img img{transform:scale(1.06)}
+.threat.rev .img{order:2}
+.t-n{font-family:var(--disp);font-weight:900;font-size:34px;color:var(--red)}
+.threat h3{font-family:var(--disp);font-weight:700;font-size:clamp(20px,2.6vw,28px);margin:10px 0 14px}
+.threat .txt p:not(.fact){color:var(--ink-soft);max-width:52ch}
+.fact{margin-top:18px;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--red);border-left:3px solid var(--red);padding-left:14px}
+
+/* что сработало */
+.worked{background:var(--pine,#15251c);background:var(--dusk);color:var(--cream);padding:80px 0}
+.w-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.worked h2{font-family:var(--disp);font-weight:700;font-size:clamp(26px,3.4vw,40px);margin:16px 0 16px}
+.w-note{color:rgba(242,233,212,.7);max-width:44ch;margin-bottom:28px}
+.w-list{list-style:none;display:flex;flex-direction:column;gap:0}
+.w-list li{display:flex;flex-direction:column;gap:4px;padding:20px 0;border-bottom:1px dashed rgba(242,233,212,.22)}
+.w-list li:first-child{padding-top:0}
+.w-list b{font-family:var(--disp);font-weight:700;font-size:17px}
+.w-list span{font-family:var(--mono);font-size:12px;letter-spacing:.06em;color:rgba(242,233,212,.6)}
+
+@media (max-width:960px){
+  .po-grid,.era-grid,.w-grid{grid-template-columns:1fr;gap:40px}
+  .threat{grid-template-columns:1fr;gap:26px}
+  .threat.rev .img{order:0}
+  .era-tabs{flex-direction:row;flex-wrap:wrap}
+}
+</style>
+
+<script>
+/* аналитика: Метрика · Топ100 · Топ.ру */
+const YM_ID = null; // ← номер счётчика Метрики
+window.analyticsLog = window.analyticsLog || [];
+function track(action, params){
+  const p = params || {};
+  window.analyticsLog.push({ ts: new Date().toISOString(), action, params: p });
+  console.info('[analytics]', action, p);
+  try { if (window.ym && YM_ID) ym(YM_ID, 'reachGoal', action, p); } catch (e) {}
+  try { if (window._tmr) _tmr.push(Object.assign({ type: 'reachGoal', goal: action }, p)); } catch (e) {}
+}
+track('page_view', { page: '/decline.html' });
+document.addEventListener('click', function (ev) {
+  const t = ev.target.closest('[data-track]');
+  if (t) track(t.dataset.track);
+});
+
+const RM = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const io = new IntersectionObserver(function (entries) {
+  entries.forEach(function (en) {
+    if (!en.isIntersecting) return;
+    en.target.classList.add('in');
+    io.unobserve(en.target);
+  });
+}, { threshold: .18 });
+document.querySelectorAll('.rv,.lm').forEach(el => io.observe(el));
+
+/* график: прорисовка линии при появлении */
+(function () {
+  const wrap = document.querySelector('.bchart-wrap');
+  if (!wrap) return;
+  const poly = wrap.querySelector('.poly');
+  const fio = new IntersectionObserver(function (es) {
+    es.forEach(function (en) {
+      if (!en.isIntersecting) return;
+      const len = poly.getTotalLength ? poly.getTotalLength() : 1400;
+      poly.style.strokeDasharray = len;
+      poly.style.strokeDashoffset = RM ? 0 : len;
+      poly.getBoundingClientRect();
+      requestAnimationFrame(() => {
+        poly.style.transition = RM ? 'none' : 'stroke-dashoffset 2.4s cubic-bezier(.4,0,.2,1) .2s';
+        poly.style.strokeDashoffset = 0;
+      });
+      fio.unobserve(en.target);
+    });
+  }, { threshold: .3 });
+  fio.observe(wrap);
+})();
+
+/* эпохи: синхронно подсвечиваем маркеры на графике */
+const ERAS = {
+  a: ['1990-е годы', 'Система охраны рухнула', 'Вместе с экономикой исчезли инспекции и научные станции. Рога сайгака оказались дорогим «товаром» для восточной медицины, и на степь вышли браконьеры на джипах. Численность падала каждый год.'],
+  b: ['2002 год', 'Дно', 'В калмыцкой степи учтены считанные сотни животных. Вид на грани исчезновения: ещё пара неудачных лет — и восстанавливать было бы некого.'],
+  c: ['2008 год', 'Поддержка', 'Запущены подкормочные площадки, усилены рейды, налажен ветеринарный мониторинг. Падение останавливается, кривая впервые за десятилетие идёт вверх.'],
+  d: ['2019–2024 годы', 'Восстановление', 'Популяция достигает примерно семи тысяч особей. Но все четыре угрозы никуда не делись — кривую держат люди, а не «само прошло».']
+};
+function setEra(key){
+  document.querySelectorAll('.era').forEach(b => b.classList.toggle('active', b.dataset.era === key));
+  document.querySelectorAll('.bchart .mark').forEach(m => m.classList.toggle('active', m.dataset.era === key));
+  const [y, t, x] = ERAS[key];
+  const body = document.getElementById('era-body');
+  body.style.animation = 'none';
+  void body.offsetWidth;
+  body.style.animation = '';
+  body.querySelector('.era-y').textContent = y;
+  document.getElementById('era-title').textContent = t;
+  document.getElementById('era-text').textContent = x;
+}
+document.querySelectorAll('.era').forEach(btn => {
+  btn.addEventListener('click', function () {
+    setEra(btn.dataset.era);
+    track('era_open', { era: btn.dataset.era });
+  });
+});
+document.querySelectorAll('.bchart .mark').forEach(m => {
+  m.style.cursor = 'pointer';
+  m.addEventListener('click', function () {
+    setEra(m.dataset.era);
+    track('era_open', { era: m.dataset.era, from: 'chart' });
+  });
+});
+setEra('a');
+</script>
+</body>
+</html>
