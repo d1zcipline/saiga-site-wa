@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520">
+  <rect width="720" height="520" fill="#c8d4b8"/>
+  <rect x="0" y="360" width="720" height="160" fill="#9a8b6a"/>
+  <ellipse cx="360" cy="400" rx="200" ry="80" fill="#8a7b5a"/>
+  <rect x="280" y="280" width="160" height="120" fill="#f5f5dc"/>
+  <rect x="300" y="300" width="60" height="50" fill="#b0e0f0"/>
+  <rect x="380" y="300" width="40" height="50" fill="#b0e0f0"/>
+  <circle cx="360" cy="260" r="40" fill="#e0c0a0"/>
+  <ellipse cx="340" cy="255" rx="6" ry="8" fill="#3a3a3a"/>
+  <ellipse cx="380" cy="255" rx="6" ry="8" fill="#3a3a3a"/>
+  <path d="M 350 275 Q 360 285 370 275" stroke="#3a3a3a" stroke-width="2" fill="none"/>
+  <rect x="200" y="340" width="80" height="50" fill="#6b8e4a"/>
+  <rect x="440" y="350" width="70" height="45" fill="#6b8e4a"/>
+  <g fill="#5a7b3a">
+    <ellipse cx="120" cy="420" rx="50" ry="35"/>
+    <ellipse cx="280" cy="450" rx="60" ry="40"/>
+    <ellipse cx="480" cy="440" rx="55" ry="38"/>
+    <ellipse cx="620" cy="425" rx="48" ry="32"/>
+  </g>
+  <circle cx="100" cy="120" r="50" fill="#f4a460"/>
+</svg>
