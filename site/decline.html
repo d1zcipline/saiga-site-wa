@@ -135,7 +135,7 @@
     </div>
 
     <article class="threat rv">
-      <div class="img"><img src="https://picsum.photos/seed/anti-poaching-patrol-jeep/720/520" alt="Патруль против браконьеров в степи"></div>
+      <div class="img"><img src="img/anti-poaching-patrol-jeep.jpg" alt="Патруль против браконьеров в степи" loading="lazy" decoding="async"></div>
       <div class="txt">
         <p class="t-n">01</p>
         <h3>Браконьерство</h3>
@@ -145,7 +145,7 @@
     </article>
 
     <article class="threat rev rv">
-      <div class="img"><img src="https://picsum.photos/seed/vet-monitoring-steppe/720/520" alt="Ветеринарный мониторинг в степи"></div>
+      <div class="img"><img src="img/vet-monitoring-steppe.jpg" alt="Ветеринарный мониторинг в степи" loading="lazy" decoding="async"></div>
       <div class="txt">
         <p class="t-n">02</p>
         <h3>Эпизоотии</h3>
@@ -155,7 +155,7 @@
     </article>
 
     <article class="threat rv">
-      <div class="img"><img src="https://picsum.photos/seed/plowed-steppe-road/720/520" alt="Распаханная степь и дорога"></div>
+      <div class="img"><img src="img/plowed-steppe-road.jpg" alt="Распаханная степь и дорога" loading="lazy" decoding="async"></div>
       <div class="txt">
         <p class="t-n">03</p>
         <h3>Деградация степи</h3>
@@ -165,7 +165,7 @@
     </article>
 
     <article class="threat rev rv">
-      <div class="img"><img src="https://picsum.photos/seed/kalmykia-harsh-winter/720/520" alt="Суровая зима в калмыцкой степи"></div>
+      <div class="img"><img src="img/kalmykia-harsh-winter.jpg" alt="Суровая зима в калмыцкой степи" loading="lazy" decoding="async"></div>
       <div class="txt">
         <p class="t-n">04</p>
         <h3>Суровые зимы и климат</h3>
@@ -272,7 +272,7 @@
 /* угрозы */
 .threat{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding:46px 0;border-bottom:1px dashed var(--line)}
 .threat:last-of-type{border-bottom:0}
-.threat .img{overflow:hidden;border-radius:4px;aspect-ratio:3/2;border:1px solid var(--line)}
+.threat .img{overflow:hidden;border-radius:4px;aspect-ratio:3/2;border:1px solid var(--line);background:var(--paper2)}
 .threat .img img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
 .threat:hover .img img{transform:scale(1.06)}
 .threat.rev .img{order:2}

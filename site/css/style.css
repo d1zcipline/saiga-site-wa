@@ -99,6 +99,7 @@ h1{font-family:var(--disp);font-weight:900;text-transform:uppercase;font-size:cl
 .who-grid{display:grid;grid-template-columns:1.15fr .85fr;grid-template-rows:auto auto;gap:26px}
 .who-big{grid-row:1/3;background:var(--paper2);border:1px solid var(--line);border-radius:4px;overflow:hidden;display:flex;flex-direction:column}
 .who-big .kb{aspect-ratio:9/6;overflow:hidden}
+.kb{background:var(--paper2)}
 .kb img{width:100%;height:100%;object-fit:cover}
 .rv.in .kb img{animation:kb 16s ease-in-out infinite alternate}
 @keyframes kb{from{transform:scale(1)}to{transform:scale(1.09) translate(-1.5%,1.5%)}}
