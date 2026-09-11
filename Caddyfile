@@ -1,3 +1,7 @@
-saiga.duckdns.org {
+wa-saiga.duckdns.org {
     reverse_proxy web:80
+}
+
+kursograd.duckdns.org {
+    reverse_proxy cite-flask:8080
 }
