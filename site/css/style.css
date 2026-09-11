@@ -200,3 +200,36 @@ h1{font-family:var(--disp);font-weight:900;text-transform:uppercase;font-size:cl
   .rv,.lm .ln i{opacity:1!important;transform:none!important}
   .chart .pt{opacity:1}
 }
+/* счётчики в футере */
+.counters-row{padding-bottom:26px;border-bottom:1px solid rgba(242,233,212,.16);margin-bottom:26px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.counters-row img{display:block;opacity:.85;transition:opacity .25s;filter:grayscale(.3)}
+.counters-row:hover img{opacity:1;filter:none}
+
+/* дисклеймер учебного проекта */
+.disclaimer{
+  background:var(--paper2);
+  border-bottom:1.5px solid var(--red);
+  padding:14px 0;
+}
+.disclaimer-text{
+  font-family:var(--mono);
+  font-size:12.5px;
+  letter-spacing:.04em;
+  color:var(--ink);
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+  line-height:1.6;
+}
+.disclaimer-icon{
+  font-size:16px;
+  flex:none;
+  color:var(--red);
+  margin-top:2px;
+}
+.disclaimer-text b{
+  color:var(--red);
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+}
