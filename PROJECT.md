@@ -16,9 +16,19 @@
 ## Структура
 
 - 6 страниц: index, saiga, decline, rescue, faq, help.
+- Общие блоки разметки — в site/partials/ и подключаются через SSI
+  (Server Side Includes): head, counters, statusbar, header-nav,
+  disclaimer, footer, analytics, saiga-symbol. Переменные страницы
+  задаются в начале файла: PAGE, TITLE, DESC, NOINDEX, ISSUE,
+  STATUS_TEXT, PAGE_PATH.
+- SSI включён в nginx.conf (`ssi on`), который копируется в образ
+  (Dockerfile) и монтируется в dev (docker-compose.dev.yml).
+  Каталог /partials/ закрыт (`internal`).
 - Общие стили: css/style.css (шрифты: Unbounded / IBM Plex Sans / IBM Plex Mono;
   палитра: песок --paper, чернила --ink, красный акцент --red).
 - У каждой страницы свои стили в <style> в конце файла.
+- Все страницы отдают `<meta name="robots" content="noindex">`
+  (NOINDEX=true) — проект учебный.
 - Изображения: только локальные, site/img/*.jpg — внешние фотостоки не используем
   (picsum.photos без ВПН отдаёт 403).
 - Единый слой аналитики: функция track(action, params) в скрипте каждой

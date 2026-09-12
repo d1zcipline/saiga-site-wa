@@ -1,0 +1,28 @@
+<script>
+const YM_ID = 112433520;
+window.analyticsLog = [];
+function track(action, params){
+  const p = params || {};
+  window.analyticsLog.push({ ts: new Date().toISOString(), action, params: p });
+  console.info('[analytics]', action, p);
+  try { if (window.ym && YM_ID) ym(YM_ID, 'reachGoal', action, p); } catch (e) {}
+  try { if (window._tmr) _tmr.push(Object.assign({ type: 'reachGoal', goal: action }, p)); } catch (e) {}
+}
+track('page_view', { page: '<!--#echo var="PAGE_PATH" -->' });
+document.addEventListener('click', function (ev) {
+  const t = ev.target.closest('[data-track]');
+  if (t) track(t.dataset.track);
+});
+const RM = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+(function () {
+  const revealIO = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (!en.isIntersecting) return;
+      en.target.classList.add('in');
+      revealIO.unobserve(en.target);
+    });
+  }, { threshold: .18 });
+  document.querySelectorAll('.rv,.lm').forEach(el => revealIO.observe(el));
+})();
+</script>
